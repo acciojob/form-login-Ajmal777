@@ -1,9 +1,8 @@
 const doc = document;
-const form = doc.getElementById(form1);
+const form = doc.getElementById('form1');
+console.log(form);
 function getFormvalue() {
-	form.addEventListener('submit', (data)=>{
-		const fname = data.fname.value;
-		const lname = data.lname.value;
-		alert(fname, lname);
-	});
+	const fname = form.fname.value;
+	const lname = form.lname.value;
+	alert(`${fname} ${lname}`);
 }
